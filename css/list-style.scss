@@ -27,3 +27,12 @@ h1 {
     font-size: 2rem;
     letter-spacing: 5px;
 }
+
+.conteudo {
+    /*border: 1px solid tomato;*/
+    width: 100%;
+}
+
+@import "./sections";
+
+@import "./titleSection";
