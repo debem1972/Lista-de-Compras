@@ -1,0 +1,61 @@
+@import "./variaveis";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    background-image: $primary;
+    width: 100%;
+}
+
+.titulo {
+    /*border: 1px solid black;*/
+    @include txtCenter(center);
+    width: 100%;
+    height: 60px;
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 2rem;
+    letter-spacing: 5px;
+}
+
+
+.conteudo {
+    /*border: 1px solid tomato;*/
+    width: 100%;
+}
+
+
+
+@import "./sections";
+
+@import "./titleSection";
+
+
+.folha {
+    display: flex;
+    /*border: 3px solid yellow;*/
+    width: 100%;
+    height: 95%;
+}
+
+.formulario {
+    /*border: 1px solid black;*/
+    width: 70%;
+}
+
+.botoes {
+    /*border: 1px solid black;*/
+    width: 30%;
+}
+
+@import "./btns";
