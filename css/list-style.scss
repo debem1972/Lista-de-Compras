@@ -17,7 +17,7 @@ html {
 
 .titulo {
     /*border: 1px solid black;*/
-    @include txtCenter(center);
+    text-align: center;
     width: 100%;
     height: 60px;
 }
@@ -38,7 +38,7 @@ h1 {
 
 @import "./sections";
 
-@import "./titleSection";
+@import "./title-section";
 
 
 .folha {
