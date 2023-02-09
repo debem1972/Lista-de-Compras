@@ -1,0 +1,42 @@
+@mixin corESombra($cor, $tsombra) {
+    color: $cor;
+    text-shadow: 2px 2px 2px $tsombra;
+}
+
+@media only screen and (max-width:1012px) {
+
+    #geral h2,
+    #bazar h2,
+    #limpeza h2,
+    #horti h2,
+    #acougue h2 {
+
+        @include corESombra(black, white);
+    }
+
+
+    #geral form {
+        @include corESombra(white, black);
+    }
+
+    #bazar form {
+        @include corESombra(white, black);
+    }
+
+    #limpeza form {
+        font-weight: bold;
+
+    }
+
+    #horti form {
+        font-weight: bold;
+
+    }
+
+    #acougue form {
+        font-weight: bold;
+
+    }
+
+
+}

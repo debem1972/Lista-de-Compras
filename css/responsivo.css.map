@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"responsivo.css"}
+{"version":3,"sources":["responsivo.scss","responsivo.css"],"names":[],"mappings":"AAKA;EAEI;;;;;IANA,YAYwB;IAXxB,8BAAA;ECMF;EDSE;IAhBA,YAiBwB;IAhBxB,8BAAA;ECUF;EDSE;IApBA,YAqBwB;IApBxB,8BAAA;ECcF;EDSE;IACI,iBAAA;ECPN;EDWE;IACI,iBAAA;ECTN;EDaE;IACI,iBAAA;ECXN;AACF","file":"responsivo.css"}
