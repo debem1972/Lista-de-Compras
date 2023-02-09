@@ -36,3 +36,22 @@ h1 {
 @import "./sections";
 
 @import "./titleSection";
+
+.folha {
+    display: flex;
+    /*border: 3px solid yellow;*/
+    width: 100%;
+    height: 95%;
+}
+
+.formulario {
+    /*border: 1px solid black;*/
+    width: 70%;
+}
+
+.botoes {
+    /*border: 1px solid black;*/
+    width: 30%;
+}
+
+@import "./btns";
