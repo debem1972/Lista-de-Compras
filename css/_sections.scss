@@ -1,0 +1,22 @@
+@mixin txtCenter($alinhar) {
+    text-align: $alinhar;
+}
+
+#geral,
+#bazar,
+#limpeza,
+#horti,
+#acougue {
+    /*border: 1px solid black;*/
+    height: 1000px;
+
+    h2 {
+        @include txtCenter(center);
+    }
+
+    form {
+        margin-top: 1rem;
+        margin-left: 3rem;
+    }
+
+}
