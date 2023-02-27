@@ -49,8 +49,56 @@ h1 {
 }
 
 .formulario {
-    /*border: 1px solid black;*/
+    border: 1px solid black;
     width: 70%;
+}
+
+.toggle-wrapper {
+    border: 1px solid $dark;
+    max-width: 5rem;
+
+}
+
+
+
+.slider {
+    /*display: flex;*/
+    border: 1px solid $dark;
+    background: $rato;
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+
+    label {
+        cursor: pointer;
+    }
+
+}
+
+.toggle-input:checked~.slider {
+    background: $pinkPanter;
+}
+
+.toggle-input:checked~.slider>.sweet {
+    background: $rato;
+    left: 22px;
+}
+
+.toggle-input {
+    display: none;
+}
+
+.sweet {
+    background: $pinkPanter;
+    margin-left: 3px;
+    margin-top: 2px;
+    height: 14px;
+    width: 14px;
+    border: none;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: all 300ms easy-in-out;
+    position: absolute;
 }
 
 .botoes {
