@@ -93,6 +93,24 @@ input.slider[type="checkbox"]:before {
     transition: 0.4s;
 }
 
+/*Posição do cursor do botão após o checked*/
+input.slider:checked[type="checkbox"]:before {
+    left: 11px;
+    box-shadow: inset -0.5px 0.5px 0.5px $rato;
+    box-shadow: -0.8px 0.5px 0.5px $dark;
+}
+
+/*Daqui p/ baixo, estão as configurações da ação do botão novo quando acionado*/
+input.slider:checked[type="checkbox"]+input#1+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+
 
 
 .botoes {
