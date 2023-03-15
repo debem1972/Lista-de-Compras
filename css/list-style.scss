@@ -75,6 +75,24 @@ input.slider[type="checkbox"] {
     position: relative;
 }
 
+input:checked [type="checkbox"] {
+    background: $luz;
+}
+
+input.slider[type="checkbox"]:before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: $nuvem;
+    position: absolute;
+    box-shadow: 0px 4px 8px 1px $rato;
+    transform: scale(1.1);
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+}
+
 
 
 .botoes {
