@@ -61,6 +61,20 @@ h1 {
     position: absolute;
 }
 
+/*Aqui começa a estilização dos novos botoes class slider*/
+
+input.slider[type="checkbox"] {
+    width: 25px;
+    height: 14px;
+    appearance: none;
+    background-color: $dark;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 16px 1px $snewBot;
+    cursor: pointer;
+    transition: 0.4s;
+    position: relative;
+}
+
 
 
 .botoes {
