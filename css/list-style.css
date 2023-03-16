@@ -1,0 +1,179 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  background-image: linear-gradient(green, yellowgreen, rgb(238, 238, 152));
+  width: 100%;
+}
+
+.titulo {
+  /*border:1px solid $dark;*/
+  text-align: center;
+  width: 100%;
+  height: 60px;
+}
+
+h1 {
+  margin-top: 10px;
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+
+.conteudo {
+  /*border:1px solid $dark;*/
+  width: 100%;
+}
+
+#acougue,
+#bazar,
+#bebidas,
+#fiambreria,
+#higiene,
+#horti,
+#mercearia,
+#padaria,
+#pets,
+#temperos {
+  /*border: 1px solid black;*/
+  height: 1900px;
+}
+#acougue h2,
+#bazar h2,
+#bebidas h2,
+#fiambreria h2,
+#higiene h2,
+#horti h2,
+#mercearia h2,
+#padaria h2,
+#pets h2,
+#temperos h2 {
+  text-align: center;
+}
+#acougue form,
+#bazar form,
+#bebidas form,
+#fiambreria form,
+#higiene form,
+#horti form,
+#mercearia form,
+#padaria form,
+#pets form,
+#temperos form {
+  margin-top: 0;
+  margin-left: 0;
+  min-height: 100%;
+}
+
+.title-secao {
+  /*border: 1px solid turquoise;*/
+  width: 100%;
+  height: 5%;
+}
+.title-secao h2 {
+  margin-top: 10px;
+}
+
+.folha {
+  display: flex;
+  /*border:3px solid yellow;*/
+  width: 100%;
+  height: 95%;
+}
+
+.formulario {
+  border: 1px solid black;
+  width: 70%;
+}
+
+.formu {
+  border: 1px solid black;
+  width: 400px;
+  margin-left: 70px;
+  margin-top: 40px;
+  position: absolute;
+}
+
+/*Aqui começa a estilização dos novos botões class slider*/
+input.slider[type=checkbox] {
+  width: 25px;
+  height: 14px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: black;
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 16px 1px rgba(0, 0, 0, 0.24);
+  cursor: pointer;
+  transition: 0.4s;
+  position: relative;
+}
+
+input:checked[type=checkbox] {
+  background: yellow;
+}
+
+input.slider[type=checkbox]:before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  box-shadow: 0px 4px 8px 1px grey;
+  transform: scale(1.1);
+  top: 0;
+  left: 0;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox]:before {
+  left: 11px;
+  box-shadow: inset -0.5px 0.5px 0.5px grey;
+  box-shadow: -0.8px 0.5px 0.5px black;
+}
+
+/*Deste ponto para baixo, são as configurações de seleção do label sendo pintado de neon*/
+input.slider:checked[type=checkbox] + input#p1 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+.botoes {
+  border: 1px solid black;
+  width: 30%;
+}
+
+.btn {
+  background: #f60;
+  font-family: inherit;
+  border: 0;
+  border-radius: 10px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 3px 3px 0 1px #930;
+  cursor: pointer;
+  width: 5rem;
+  height: 2rem;
+  margin-top: 15px;
+  margin-left: 23%;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.btn:active {
+  box-shadow: 0 0 0 0 #930, inset 3px 3px 3px #930;
+  transform: translate(3px 3px);
+}
+.btn a {
+  text-decoration: none;
+  color: White;
+}/*# sourceMappingURL=list-style.css.map */
