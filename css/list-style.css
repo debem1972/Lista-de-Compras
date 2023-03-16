@@ -150,6 +150,537 @@ input.slider:checked[type=checkbox] + input#p1 + label {
   transition: 0.4s;
 }
 
+input.slider:checked[type=checkbox] + input#p2 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p3 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p4 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p5 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p6 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p7 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p8 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p9 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p10 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p11 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p12 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p13 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p14 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p15 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p16 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p17 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p18 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p19 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p20 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p21 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p22 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p23 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p24 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p25 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p26 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p27 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p28 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p29 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p30 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p31 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p32 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p33 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p34 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p35 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p36 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p37 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p38 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p39 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p40 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p41 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p42 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p43 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p44 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p45 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p46 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p47 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p48 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p49 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p50 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p51 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p52 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p53 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p54 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p55 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p56 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p57 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p58 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p59 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#p60 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
 .botoes {
   border: 1px solid black;
   width: 30%;
