@@ -10,7 +10,7 @@ html {
 }
 
 .container {
-  background-image: linear-gradient(pink, blue);
+  background: pink;
   width: 100%;
 }
 
