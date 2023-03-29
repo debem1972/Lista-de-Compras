@@ -5,38 +5,32 @@
 
 @media only screen and (max-width:1012px) {
 
-    #geral h2,
+    #acougue h2,
     #bazar h2,
-    #limpeza h2,
+    #bebidas h2,
+    #fiambreria h2,
+    #higiene h2,
     #horti h2,
-    #acougue h2 {
+    #mercearia h2,
+    #padaria h2,
+    #pets h2,
+    #temperos h2 {
 
-        @include corESombra(black, white);
+        @include corESombra (white, black);
     }
 
 
-    #geral form {
+    #acougue form,
+    #bazar form,
+    #bebidas form,
+    #fiambreria form,
+    #higiene form,
+    #horti form,
+    #mercearia form,
+    #padaria form,
+    #pets form,
+    #temperos form {
+
         @include corESombra(white, black);
     }
-
-    #bazar form {
-        @include corESombra(white, black);
-    }
-
-    #limpeza form {
-        font-weight: bold;
-
-    }
-
-    #horti form {
-        font-weight: bold;
-
-    }
-
-    #acougue form {
-        font-weight: bold;
-
-    }
-
-
 }

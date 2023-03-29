@@ -11,7 +11,7 @@ html {
 }
 
 .container {
-    background: $primary;
+    background: $fome;
     width: 100%;
 }
 
@@ -20,6 +20,8 @@ html {
     text-align: center;
     width: 100%;
     height: 60px;
+    color: $titleCor;
+    text-shadow: 2px 2px 2px $dark;
 }
 
 h1 {
