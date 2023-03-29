@@ -89,12 +89,12 @@ h1 {
 }
 
 .formulario {
-  border: 1px solid black;
+  /*border: 1px solid $dark;*/
   width: 70%;
 }
 
 .formu {
-  border: 1px solid black;
+  /*border: 1px solid $dark;*/
   width: 400px;
   margin-left: 70px;
   margin-top: 40px;
@@ -3847,7 +3847,7 @@ input.car:checked[type=checkbox] + label + img {
 }
 
 .botoes {
-  border: 1px solid black;
+  /*border: 1px solid $dark;*/
   width: 30%;
 }
 
