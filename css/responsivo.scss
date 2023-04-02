@@ -5,6 +5,21 @@
 
 @media only screen and (max-width:1012px) {
 
+    .titulo h1 {
+        letter-spacing: normal;
+    }
+
+    .info {
+        margin-left: 380px;
+    }
+
+    .helpi {
+        left: 3%;
+        width: 460px;
+        overflow: hidden;
+    }
+
+
     #acougue h2,
     #bazar h2,
     #bebidas h2,
