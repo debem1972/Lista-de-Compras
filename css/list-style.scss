@@ -11,16 +11,78 @@ html {
 }
 
 .container {
-    background-image: $primary;
+    background: $fome;
     width: 100%;
 }
 
 .titulo {
-    /*border: 1px solid black;*/
+    /*border:1px solid $dark;*/
     text-align: center;
     width: 100%;
     height: 60px;
+    color: $titleCor;
+    text-shadow: 2px 2px 2px $dark;
 }
+
+.helpMe {
+    display: none;
+    margin-top: 5px;
+    margin-left: 1085px;
+    position: absolute;
+    z-index: 10;
+}
+
+.info {
+    margin-top: 7px;
+    margin-left: 1090px;
+    position: absolute;
+    z-index: 10;
+    border: 1px solid $corBotao;
+    width: 45px;
+    height: 25px;
+    border-radius: 20%;
+    background: $corBotao;
+    color: $nuvem;
+    text-shadow: 2px 2px 2px $dark;
+    text-align: center;
+    cursor: pointer;
+}
+
+.helpi {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 58%;
+    border: none;
+    border-radius: 10px;
+    background: $nuvem;
+    box-shadow: 2px 2px 8px $dark;
+    z-index: 10;
+}
+
+@keyframes viewHelp {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+
+    60% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/*Aqui chamamos o iframe ajuda.*/
+
+input.helpMe:checked[type="checkbox"]+label+iframe {
+    display: inline;
+    animation: viewHelp 1s;
+}
+
 
 h1 {
     margin-top: 10px;
@@ -28,34 +90,3789 @@ h1 {
     letter-spacing: 5px;
 }
 
-
 .conteudo {
-    /*border: 1px solid tomato;*/
+    /*border:1px solid $dark;*/
     width: 100%;
 }
-
-
 
 @import "./sections";
 
 @import "./title-section";
 
-
 .folha {
     display: flex;
-    /*border: 3px solid yellow;*/
+    /*border:3px solid yellow;*/
     width: 100%;
     height: 95%;
 }
 
 .formulario {
-    /*border: 1px solid black;*/
+    /*border: 1px solid $dark;*/
     width: 70%;
 }
 
+.formu {
+    /*border: 1px solid $dark;*/
+    width: 400px;
+    margin-left: 70px;
+    margin-top: 40px;
+    position: absolute;
+}
+
+.formu>h3 {
+    font-size: 10px;
+}
+
+/*Aqui começa a estilização dos novos botões class slider*/
+
+input.slider[type="checkbox"] {
+    margin-left: 5px;
+    width: 25px;
+    height: 14px;
+    appearance: none;
+    background-color: $dark;
+    border-radius: 20px;
+    box-shadow: inset 0px 0px 16px 1px $snewBot;
+    cursor: pointer;
+    transition: 0.4s;
+    position: relative;
+}
+
+
+
+input.slider[type="checkbox"]:before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: $nuvem;
+    position: absolute;
+    box-shadow: 0px 4px 8px 1px $rato;
+    transform: scale(1.1);
+    top: 0;
+    left: 0;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]:before {
+    left: 11px;
+    box-shadow: inset -0.5px 0.5px 0.5px $rato;
+    box-shadow: -0.8px 0.5px 0.5px $dark;
+}
+
+input:checked[type="checkbox"] {
+    background: $luz;
+    box-shadow: 2px 2px 3px $rato;
+}
+
+/*Deste ponto para baixo, são as configurações de seleção do label sendo pintado de neon*/
+
+input.slider:checked[type="checkbox"]+input#p1+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p2+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p3+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p4+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p5+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p6+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p7+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p8+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p9+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p10+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p11+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p12+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p13+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p14+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p15+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p16+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p17+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p18+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p19+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p20+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p21+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p22+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p23+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p24+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p25+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p26+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p27+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p28+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p29+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p30+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p31+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p32+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p33+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p34+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p35+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p36+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p37+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p38+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p39+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p40+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p41+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p42+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p43+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p44+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p45+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p46+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p47+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p48+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p49+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p50+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p51+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p52+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p53+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p54+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p55+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p56+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p57+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p58+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p59+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p60+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p61+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p62+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p63+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p64+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p65+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p66+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p67+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p68+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p69+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p70+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p71+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p72+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p73+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p74+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p75+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p76+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p77+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p78+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p79+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p80+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p81+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p82+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p83+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p84+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p85+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p86+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p87+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p88+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p89+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p90+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p91+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p92+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p93+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p94+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p95+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p96+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p97+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p98+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p99+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p100+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p101+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p102+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p103+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p104+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p105+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p106+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p107+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p108+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p109+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p110+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p111+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p112+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p113+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p114+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p115+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p116+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p117+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p118+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p119+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p120+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p121+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p122+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p123+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p124+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p125+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p126+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p127+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p128+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p129+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p130+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p131+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p132+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p133+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p134+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p135+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p136+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p137+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p138+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p139+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p140+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p141+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p142+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p143+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p144+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p145+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p146+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p147+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p148+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p149+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p150+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p151+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p152+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p153+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p154+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p155+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p156+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p157+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p158+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p159+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p160+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p161+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p162+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p163+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p164+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p165+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p166+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p167+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p168+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p169+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p170+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p171+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p172+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p173+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p174+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p175+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p176+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p177+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p178+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p179+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p180+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p181+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p182+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p183+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p184+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p185+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p186+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p187+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p188+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p189+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p190+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p191+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p192+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p193+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p194+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p195+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p196+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p197+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p198+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p199+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p200+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p201+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p202+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p203+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p204+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p205+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p206+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p207+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p208+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p209+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p210+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p211+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p212+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p213+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p214+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p215+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p216+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p217+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p218+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p219+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p220+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p221+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p222+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p223+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p224+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p225+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p226+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p227+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p228+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p229+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p230+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p231+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p232+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p233+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p234+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p235+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p236+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p237+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p238+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p239+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p240+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p241+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p242+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p243+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p244+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p245+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p246+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p247+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p248+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p249+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p250+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p251+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p252+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p253+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p254+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p255+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p256+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p257+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p258+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p259+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p260+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p261+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p262+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p263+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p264+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p265+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p266+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p267+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p268+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p269+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p270+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p271+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p272+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p273+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p274+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p275+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p276+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p277+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p278+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p279+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p280+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p281+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p282+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p283+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p284+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p285+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p286+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p287+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p288+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p289+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p290+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p291+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p292+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p293+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p294+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p295+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p296+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p297+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p298+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p299+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p300+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p301+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p302+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p303+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p304+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p305+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p306+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p307+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p308+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p309+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p310+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p311+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p312+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p313+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p314+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p315+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p316+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p317+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p318+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p319+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p320+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p321+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p322+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p323+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p324+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p325+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p326+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p327+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p328+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p329+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p330+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p331+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p332+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p333+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p334+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p335+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p336+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p337+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p338+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p339+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p340+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p341+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p342+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p343+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p344+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p345+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p346+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p347+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p348+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p349+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p350+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p351+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p352+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p353+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p354+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p355+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p356+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p357+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p358+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p359+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p360+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p361+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p362+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p363+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p364+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p365+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p366+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p367+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p368+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p369+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p370+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p371+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p372+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p373+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p374+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p375+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p376+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p377+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p378+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p379+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p380+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p381+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p382+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p383+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p384+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p385+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p386+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p387+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p388+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p389+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p390+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p391+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p392+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p393+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p394+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p395+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p396+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p397+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p398+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p399+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p400+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p401+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p402+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p403+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p404+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p405+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p406+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p407+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p408+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#p409+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+
+/*p {
+    display: none;
+    margin-left: 20px;
+    position: absolute;
+
+}*/
+
+/*input.car:checked[type="checkbox"]+label+p {
+    display: inline;
+}*/
+
+img {
+    display: none;
+    width: 20px;
+}
+
+input.car:checked[type="checkbox"]+label+img {
+    display: inline;
+}
+
+
 .botoes {
-    /*border: 1px solid black;*/
+    /*border: 1px solid $dark;*/
     width: 30%;
 }
 
-@import "./btns";
+@import "./btns"

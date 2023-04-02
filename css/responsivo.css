@@ -1,27 +1,39 @@
 @media only screen and (max-width: 1012px) {
-  #geral h2,
+  .titulo h1 {
+    letter-spacing: normal;
+  }
+  .info {
+    margin-left: 380px;
+  }
+  .helpi {
+    left: 3%;
+    width: 460px;
+    overflow: hidden;
+  }
+  #acougue h2,
   #bazar h2,
-  #limpeza h2,
+  #bebidas h2,
+  #fiambreria h2,
+  #higiene h2,
   #horti h2,
-  #acougue h2 {
-    color: black;
-    text-shadow: 2px 2px 2px white;
-  }
-  #geral form {
+  #mercearia h2,
+  #padaria h2,
+  #pets h2,
+  #temperos h2 {
     color: white;
     text-shadow: 2px 2px 2px black;
   }
-  #bazar form {
+  #acougue form,
+  #bazar form,
+  #bebidas form,
+  #fiambreria form,
+  #higiene form,
+  #horti form,
+  #mercearia form,
+  #padaria form,
+  #pets form,
+  #temperos form {
     color: white;
     text-shadow: 2px 2px 2px black;
-  }
-  #limpeza form {
-    font-weight: bold;
-  }
-  #horti form {
-    font-weight: bold;
-  }
-  #acougue form {
-    font-weight: bold;
   }
 }/*# sourceMappingURL=responsivo.css.map */

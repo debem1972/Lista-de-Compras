@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: block;
+    border: 1px solid black;
+    max-width: 680px;
+    min-height: 100%;
+    color: rgb(32, 33, 34);
+    font-size: 14px;
+    font-family: sans-serif;
+    background: rgb(220, 232, 220);
+}
+
+.titulo {
+    text-align: center;
+}
+
+
+.menu {
+    /*border: 1px solid black;*/
+    padding: 10px;
+    margin-left: 15px;
+    width: 50%;
+}
+
+.start {
+    margin-left: 240px;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px grey;
+}
+
+.content {
+    display: block;
+    /*border: 1px solid red;*/
+    min-height: 1100px;
+}
+
+.floatleft {
+    display: block;
+    /*border: 1px solid red;*/
+    float: left;
+    padding: 5px;
+}
+
+.noresize {
+    display: block;
+    margin-left: 5px;
+    /*border: 1px solid black;*/
+    height: 203px;
+}
+
+p {
+    display: block;
+    /*border: 1px solid black;*/
+    margin: 7px;
+    line-height: 22px;
+}
+
+.printCel {
+    width: 200px;
+    height: 300px;
+}
