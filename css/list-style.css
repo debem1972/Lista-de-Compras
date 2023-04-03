@@ -85,7 +85,7 @@ h1 {
 }
 
 .conteudo {
-  /*border:1px solid $dark;*/
+  /*border: 1px solid $dark;*/
   width: 100%;
 }
 
@@ -100,6 +100,7 @@ h1 {
 #pets,
 #temperos {
   /*border: 1px solid black;*/
+  width: 100%;
   height: 2600px;
 }
 #acougue h2,
@@ -153,7 +154,7 @@ h1 {
 }
 
 .formu {
-  /*border: 1px solid $dark;*/
+  /*border: 1px solid $fome;*/
   width: 400px;
   margin-left: 70px;
   margin-top: 40px;
@@ -3908,6 +3909,7 @@ input.car:checked[type=checkbox] + label + img {
 .botoes {
   /*border: 1px solid $dark;*/
   width: 30%;
+  z-index: 9;
 }
 
 .btn {
