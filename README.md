@@ -4,4 +4,5 @@ A página completa estará pública aqui no gitHub para qualquer um que tenha in
 Apesar da simplicidade deste projeto, nele estão aplicadas as seguintes tecnologias:html, css, scss e responsividade.
 Seguirei atualizando melhorias!
 Crédito:a imagem do carrinho de compras, foi baixado do site flaticon.com e seus créditos devem ser dados a Smashicons conforme sugerido pelo site.
+Foram implementadas algumas melhorias em relação a responsividade. Após a última publicação, acessando a página apartir de meu smartphone, percebi discrepâncias que só poderiam ser percebidas de fato após a publicação, sendo necessário tais mudanças.
 Boas compras!
