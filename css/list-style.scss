@@ -3849,6 +3849,33 @@ input.slider:checked[type="checkbox"]+input#p409+label {
     transition: 0.4s;
 }
 
+input.slider:checked[type="checkbox"]+input#n1+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#n2+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
+input.slider:checked[type="checkbox"]+input#n3+label {
+    color: $neon;
+    border: 1px solid $neon;
+    border-radius: 5px;
+    text-shadow: 0 0 3px $ratoDark, 0 0 29px $neon;
+    box-shadow: inset 0 0 10px $neon, 0 0 3px $neon;
+    transition: 0.4s;
+}
+
 
 /*p {
     display: none;
