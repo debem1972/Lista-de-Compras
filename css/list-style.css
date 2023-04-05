@@ -11,7 +11,7 @@ html {
 
 .container {
   background: green;
-  width: 100%;
+  min-width: 100%;
 }
 
 .titulo {
@@ -164,6 +164,10 @@ h1 {
 
 .formu > h3 {
   font-size: 10px;
+}
+
+.car {
+  margin-left: 10px;
 }
 
 /*Aqui começa a estilização dos novos botões class slider*/
@@ -3916,15 +3920,7 @@ input.slider:checked[type=checkbox] + input#n3 + label {
   transition: 0.4s;
 }
 
-/*p {
-    display: none;
-    margin-left: 20px;
-    position: absolute;
-
-}*/
-/*input.car:checked[type="checkbox"]+label+p {
-    display: inline;
-}*/
+/*Aqui, aparece o carrinho com check ao lado do label ao confirmar o checkbox*/
 img {
   display: none;
   width: 20px;
