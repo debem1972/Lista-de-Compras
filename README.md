@@ -5,4 +5,5 @@ Apesar da simplicidade deste projeto, nele estão aplicadas as seguintes tecnolo
 Seguirei atualizando melhorias!
 Crédito:a imagem do carrinho de compras, foi baixado do site flaticon.com e seus créditos devem ser dados a Smashicons conforme sugerido pelo site.
 Foram implementadas algumas melhorias em relação a responsividade. Após a última publicação, acessando a página apartir de meu smartphone, percebi discrepâncias que só poderiam ser percebidas de fato após a publicação, sendo necessário tais mudanças.
+Melhorias referente a responsividade do arquivo de ajuda (iframe) e acrecentar à lista dois produtos que faltaram.
 Boas compras!

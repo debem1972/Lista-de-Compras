@@ -5,6 +5,9 @@
   .titulo h1 {
     letter-spacing: normal;
   }
+  .formu {
+    font-size: 18px;
+  }
   .info {
     margin-left: 10px;
   }
