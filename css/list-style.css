@@ -36,11 +36,11 @@ html {
   margin-left: 1090px;
   position: absolute;
   z-index: 10;
-  border: 1px solid #f60;
+  border: 1px solid rgb(208, 132, 61);
   width: 45px;
   height: 25px;
   border-radius: 20%;
-  background: #f60;
+  background: rgb(208, 132, 61);
   color: white;
   text-shadow: 2px 2px 2px black;
   text-align: center;
@@ -3937,7 +3937,7 @@ input.car:checked[type=checkbox] + label + img {
 }
 
 .btn {
-  background: #f60;
+  background: rgb(208, 132, 61);
   font-family: inherit;
   border: 0;
   border-radius: 10px;
