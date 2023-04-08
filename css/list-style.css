@@ -3938,6 +3938,15 @@ input.slider:checked[type=checkbox] + input#n5 + label {
   transition: 0.4s;
 }
 
+input.slider:checked[type=checkbox] + input#n6 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
 /*Aqui, aparece o carrinho com check ao lado do label ao confirmar o checkbox*/
 img {
   display: none;
