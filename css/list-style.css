@@ -36,11 +36,11 @@ html {
   margin-left: 1090px;
   position: absolute;
   z-index: 10;
-  border: 1px solid rgb(208, 132, 61);
+  border: 1px solid rgb(226, 99, 60);
   width: 45px;
   height: 25px;
   border-radius: 20%;
-  background: rgb(208, 132, 61);
+  background: rgb(226, 99, 60);
   color: white;
   text-shadow: 2px 2px 2px black;
   text-align: center;
@@ -3920,6 +3920,24 @@ input.slider:checked[type=checkbox] + input#n3 + label {
   transition: 0.4s;
 }
 
+input.slider:checked[type=checkbox] + input#n4 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
+input.slider:checked[type=checkbox] + input#n5 + label {
+  color: #14fff1;
+  border: 1px solid #14fff1;
+  border-radius: 5px;
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.3), 0 0 29px #14fff1;
+  box-shadow: inset 0 0 10px #14fff1, 0 0 3px #14fff1;
+  transition: 0.4s;
+}
+
 /*Aqui, aparece o carrinho com check ao lado do label ao confirmar o checkbox*/
 img {
   display: none;
@@ -3937,7 +3955,7 @@ input.car:checked[type=checkbox] + label + img {
 }
 
 .btn {
-  background: rgb(208, 132, 61);
+  background: rgb(226, 99, 60);
   font-family: inherit;
   border: 0;
   border-radius: 10px;
