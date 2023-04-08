@@ -1,7 +1,11 @@
-* {
+/** {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}*/
+
+body {
+    background-color: $rato;
 }
 
 html {
@@ -10,61 +14,63 @@ html {
 
 .container {
     display: block;
-    border: 1px solid black;
-    max-width: 680px;
-    min-height: 100%;
-    color: rgb(32, 33, 34);
-    font-size: 14px;
-    font-family: sans-serif;
-    background: rgb(220, 232, 220);
-}
-
-.titulo {
-    text-align: center;
-}
-
-
-.menu {
-    /*border: 1px solid black;*/
-    padding: 10px;
-    margin-left: 15px;
-    width: 50%;
-}
-
-.start {
-    margin-left: 240px;
-    text-decoration: none;
-    text-shadow: 2px 2px 2px grey;
+    background-color: $nuvem;
+    min-width: 255px;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+    font-size: 16px;
+    box-shadow: 2px 2px 3px $dark;
 }
 
 .content {
     display: block;
-    /*border: 1px solid red;*/
     min-height: 1100px;
+
 }
 
-.floatleft {
+
+.floatright {
     display: block;
-    /*border: 1px solid red;*/
+    /*border: 2px solid yellow;*/
     float: left;
+    width: 50%;
     padding: 5px;
 }
 
 .noresize {
     display: block;
-    margin-left: 5px;
-    /*border: 1px solid black;*/
-    height: 203px;
+    /*border: 1px solid blue;*/
+    width: 100%;
 }
+
+img {
+    width: 100%;
+    box-shadow: 2px 2px 3px $dark;
+}
+
+h1,
+h2 {
+    margin-top: 8px;
+}
+
 
 p {
     display: block;
-    /*border: 1px solid black;*/
-    margin: 7px;
-    line-height: 22px;
+    line-height: 18px;
+    margin-top: 8px;
+    margin-left: 7px;
 }
 
-.printCel {
-    width: 200px;
-    height: 300px;
+
+.start {
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    color: $dark;
+    text-shadow: 2px 2px 3px $ratoDark;
+    float: right;
+    margin-bottom: 10px;
+
 }
