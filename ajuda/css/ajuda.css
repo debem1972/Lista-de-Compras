@@ -1,11 +1,5 @@
-/** {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}*/
-
 body {
-    background-color: $rato;
+    background-color: rgb(242, 236, 236);
 }
 
 html {
@@ -14,14 +8,14 @@ html {
 
 .container {
     display: block;
-    background-color: $nuvem;
+    background-color: white;
     min-width: 255px;
     max-width: 600px;
     padding: 20px;
     border-radius: 10px;
     margin: auto;
     font-size: 16px;
-    box-shadow: 2px 2px 3px $dark;
+    box-shadow: 2px 2px 3px black;
 }
 
 .content {
@@ -47,7 +41,8 @@ html {
 
 img {
     width: 100%;
-    box-shadow: 2px 2px 3px $dark;
+    box-shadow: 2px 2px 3px black;
+    margin-top: 3px;
 }
 
 h1,
@@ -69,7 +64,7 @@ p {
     font-size: 20px;
     text-decoration: none;
     color: $dark;
-    text-shadow: 2px 2px 3px $ratoDark;
+    text-shadow: 2px 2px 3px grey;
     float: right;
     margin-bottom: 10px;
 
