@@ -68,12 +68,6 @@ html {
     z-index: 10;
 }
 
-/*Aqui, chamamos a ajuda!*/
-
-input.helpMe:checked[type="checkbox"]+label+iframe {
-    display: inline;
-    animation: viewHelp 1s;
-}
 
 
 @keyframes viewHelp {
@@ -92,7 +86,12 @@ input.helpMe:checked[type="checkbox"]+label+iframe {
     }
 }
 
+/*Aqui, chamamos a ajuda!*/
 
+input.helpMe:checked[type="checkbox"]+label+iframe {
+    display: inline;
+    animation: viewHelp 1s;
+}
 
 .conteudo {
     /*border: 1px solid $dark;*/

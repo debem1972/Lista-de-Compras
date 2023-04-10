@@ -24,11 +24,6 @@ html {
 
 }
 
-/*Aqui fechamos o iframe ajuda.*/
-
-input.fechar:checked[type="checkbox"]+label+.helpi {
-    display: none;
-}
 
 
 .floatright {

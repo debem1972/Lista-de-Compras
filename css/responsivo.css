@@ -42,7 +42,7 @@
     text-shadow: 2px 2px 2px black;
   }
 }
-@media screen and (max-width: 397px) {
+@media screen and (max-width: 398px) {
   .formu {
     font-size: 14px;
   }
