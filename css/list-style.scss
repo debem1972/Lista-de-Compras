@@ -30,6 +30,8 @@ html {
     }
 }
 
+
+
 .helpMe {
     display: none;
     margin-top: 5px;
@@ -65,6 +67,14 @@ html {
     box-shadow: 2px 2px 8px $dark;
     z-index: 10;
 }
+
+/*Aqui, chamamos a ajuda!*/
+
+input.helpMe:checked[type="checkbox"]+label+iframe {
+    display: inline;
+    animation: viewHelp 1s;
+}
+
 
 @keyframes viewHelp {
     0% {
