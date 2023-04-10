@@ -82,14 +82,6 @@ html {
     }
 }
 
-/*Aqui chamamos o iframe ajuda.*/
-
-input.helpMe:checked[type="checkbox"]+label+iframe {
-    display: inline;
-    animation: viewHelp 1s;
-}
-
-
 
 
 .conteudo {
