@@ -56,3 +56,19 @@
         @include corESombra(white, black);
     }
 }
+
+@media screen and (max-width:397px) {
+
+    .formu {
+        font-size: 14px;
+    }
+
+}
+
+
+@media screen and (max-width:330px) {
+
+    .formu {
+        font-size: 13px;
+    }
+}
