@@ -41,4 +41,19 @@
     color: white;
     text-shadow: 2px 2px 2px black;
   }
+}
+@media screen and (max-width: 397px) {
+  .formu {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .formu {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 365px) {
+  .titulo h1 {
+    font-size: 23px;
+  }
 }/*# sourceMappingURL=responsivo.css.map */
