@@ -30,6 +30,8 @@ html {
     }
 }
 
+
+
 .helpMe {
     display: none;
     margin-top: 5px;
@@ -66,6 +68,8 @@ html {
     z-index: 10;
 }
 
+
+
 @keyframes viewHelp {
     0% {
         transform: scale(0.1);
@@ -82,7 +86,12 @@ html {
     }
 }
 
+/*Aqui, chamamos a ajuda!*/
 
+input.helpMe:checked[type="checkbox"]+label+iframe {
+    display: inline;
+    animation: viewHelp 1s;
+}
 
 .conteudo {
     /*border: 1px solid $dark;*/
